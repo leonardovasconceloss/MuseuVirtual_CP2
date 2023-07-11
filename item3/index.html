@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint 2 </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../css/itens.css">
+
+</head>
+
+<body>
+
+    <header class="header-container" id="Header-container">
+
+        <div class="logo-header">
+            <img src="../img/Brown_Mascot_Lion_Free_Logo__3_-removebg-preview (1).png" alt="">
+            <h1>Galeria Histórica</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <a href="">
+                    <li>HOME</li>
+                </a>
+                <a href="">
+                    <li>ITENS</li>
+                </a>
+                <a href="">
+                    <li>SOBRE</li>
+                </a>
+
+                <button class="login-btn">
+                    <a href="#loginModal">
+                        <li>LOGIN</li>
+                    </a>
+
+                </button>
+            </ul>
+
+        </nav>
+        <div id="loginModal" class="modal">
+
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Fazer Login</h2>
+                <!-- formulário de login vai aqui -->
+                <form class="form-content">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username">
+
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password">
+                    <div class="submit-btn">
+                        <a href="" input type="submit" value="Entrar">Entrar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main class="main-container">
+
+        <section class="explore">
+
+            <div class="parchment">
+
+
+            </div>
+            <div class="content-explore">
+                <h2>Pergaminhos do Mar Morto</h2>
+                <button class="btn-explore" onclick="goToMiddle()">
+                    <h3>DETALHES</h3>
+                </button>
+            </div>
+
+        </section>
+
+        <section class="artefatos-container"> <!-- Aqui será a seção sobre o item -->
+
+            <div class="content-gallery" id="middle">
+                <h2>História
+                </h2> <!-- titulo do item -->
+                <p>
+                    Os Pergaminhos do Mar Morto são uma coleção de textos judaicos que foram descobertos entre 1947 e
+                    1956 nas onze cavernas ao redor do sítio arqueológico de Qumran, na margem noroeste do Mar Morto.
+
+                    Os textos são de grande significado histórico e religioso, pois incluem as primeiras cópias
+                    conhecidas de livros do Antigo Testamento, bem como outros textos judaicos e documentos seculares da
+                    época. Os manuscritos são escritos principalmente em hebraico, mas também há textos em aramaico e
+                    grego.
+
+                    Os manuscritos foram produzidos por uma seita judaica, provavelmente os essênios, que viveram em
+                    Qumran até a destruição do assentamento por volta de 68 d.C. durante a Primeira Guerra
+                    Judaico-Romana. Eles colocaram os manuscritos em jarros de cerâmica e os esconderam nas cavernas
+                    para protegê-los.
+
+                    Os Manuscritos do Mar Morto são incrivelmente bem preservados, considerando sua idade. Eles fornecem
+                    uma visão valiosa da vida judaica e da história bíblica durante o período do Segundo Templo (537
+                    a.C. a 70 d.C.). Além disso, eles têm implicações significativas para a compreensão do texto da
+                    Bíblia, pois confirmam a precisão com que os textos bíblicos foram copiados ao longo dos séculos.
+                <div>
+                    <h6>
+                        Local mais comum de se encontrar: Museu de Israel | Pesquisador notável no ramo: Dr. Emanuel Tov
+                    </h6>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="video-section">
+            <div class="video-title">
+                <h3>Video do artefato</h3>
+            </div>
+            <div class="video-artefato">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4eZLnVT1bRo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-container">
+        <div class="footer-content">
+            <h3>
+                Leonardo V Santana
+            </h3>
+            <p>Responsável Pelo Desenvolvimento Front-end</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/leonardo-v-santana-7b1a20170/" target="_blank"><img
+                        src="../img/linkdlinicon.svg" alt=""></a>
+                <a href="https://github.com/leonardovasconceloss" target="_blank"><img src="../img/githubicon.svg"
+                        alt=""></a>
+            </div>
+
+        </div>
+        <div class="date">
+            <h6>Checkpoint 3 | Desenvolvido em 2023</h6>
+        </div>
+    </footer>
+
+</body>
+
+</html>

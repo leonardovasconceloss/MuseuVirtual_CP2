@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint 2 </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <header class="header-container" id="Header-container">
+
+        <div class="logo-header">
+            <img src="./img/Brown_Mascot_Lion_Free_Logo__3_-removebg-preview (1).png" alt="">
+            <h1>Galeria Histórica</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <a href="">
+                    <li>HOME</li>
+                </a>
+                <a href="">
+                    <li>ITENS</li>
+                </a>
+                <a href="">
+                    <li>SOBRE</li>
+                </a>
+
+                <button class="login-btn">
+                    <a href="#loginModal">
+                        <li>LOGIN</li>
+                    </a>
+
+                </button>
+            </ul>
+
+        </nav>
+        <div id="loginModal" class="modal">
+
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Fazer Login</h2>
+                <!-- formulário de login vai aqui -->
+                <form class="form-content">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username">
+
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password">
+                    <div class="submit-btn">
+                        <a href="" input type="submit" value="Entrar">Entrar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main class="main-container">
+
+        <section class="explore">
+
+            <div class="main-image">
+
+            </div>
+            <div class="content-explore">
+                <h2>NAVEGUE PELA HISTÓRIA</h2>
+                <button class="btn-explore" onclick="goToMiddle()">
+                    <h3>EXPLORAR</h3>
+                </button>
+            </div>
+
+
+        </section>
+
+        <section class="artefatos-container">
+            <div class="title-gallery" id="middle">
+                <h2>Artefatos</h2>
+            </div>
+            <div class="gallery-container">
+                <div class="artefato">
+
+                    <div class="card">
+                        <img src="./img/suttonhelmet.png" class="card-img-top" alt="...">
+                        <div class="card-body" style="background-image: url(./img/wallhaven-mdj5gm_1920x1200.png);">
+                            <h5 class="card-title">Sutton Hoo Helmet</h5>
+                            <p class="card-text">Joia anglo-saxã do século VII, achado em navio inglês.</p>
+                            <div class="btn-artefato">
+                                <button>
+                                    <a href="./item1/index.html" target="_blank">
+                                        <h6 class="card-info">INFORMAÇÕES</h6>
+                                    </a>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="artefato">
+
+                    <div class="card">
+                        <img src="./img/vidro-romano.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" style="background-image: url(./img/wallhaven-mdj5gm_1920x1200.png); ">
+                            <h5 class="card-title">Vidro romano</h5>
+                            <p class="card-text">Arte antiga, usada em joias, janelas e vasilhas. Símbolo
+                                de status.</p>
+                            <div class="btn-artefato">
+                                <button>
+                                    <a href="./item2/index.html" target="_blank">
+                                        <h6 class="card-info">INFORMAÇÕES</h6>
+                                    </a>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="artefato">
+
+                    <div class="card">
+                        <img src="./img/pergaminhos-marmorto.png" class="card-img-top" alt="...">
+                        <div class="card-body" style="background-image: url(./img/wallhaven-mdj5gm_1920x1200.png); ">
+                            <h5 class="card-title">Pergaminhos do MM</h5>
+                            <p class="card-text">Estes pergaminhos contêm os textos bíblicos mais antigos.
+                            </p>
+                            <div class="btn-artefato">
+                                <button>
+                                    <a href="./item3/index.html" target="_blank">
+                                        <h6 class="card-info">INFORMAÇÕES</h6>
+                                    </a>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="artefato">
+
+                    <div class="card">
+                        <img src="./img/manuscritovoynich.png" class="card-img-top" alt="...">
+                        <div class="card-body" style="background-image: url(./img/wallhaven-mdj5gm_1920x1200.png); ">
+                            <h5 class="card-title">O Manuscrito Voynich</h5>
+                            <p class="card-text">Livro medieval indecifrado, repleto de ilustrações enigmáticas.</p>
+                            <div class="btn-artefato">
+                                <button>
+                                    <a href="./item4/index.html" target="_blank">
+                                        <h6 class="card-info">INFORMAÇÕES</h6>
+                                    </a>
+                                </button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="artefato">
+
+                    <div class="card">
+                        <img src="./img/idolodeshigir-fotor-2023070821322.png" class="card-img-top" alt="...">
+                        <div class="card-body" style="background-image: url(./img/wallhaven-mdj5gm_1920x1200.png); ">
+                            <h5 class="card-title">O Ídolo de Shigir</h5>
+                            <p class="card-text">Com 11.500 anos, é a escultura de madeira mais antiga, e enigmática.
+                            </p>
+                            <div class="btn-artefato">
+                                <button>
+                                    <a href="./item5/index.html" target="_blank">
+                                        <h6 class="card-info">INFORMAÇÕES</h6>
+                                    </a>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="artefato">
+
+                    <div class="card">
+                        <img src="./img/máquina-de-anticitera.png" class="card-img-top" alt="...">
+                        <div class="card-body" style="background-image: url(./img/wallhaven-mdj5gm_1920x1200.png); ">
+                            <h5 class="card-title">Mecanismo de Anticítera</h5>
+                            <p class="card-text">Antigo 'computador' grego, usado para prever eventos astronômicos.</p>
+                            <div class="btn-artefato">
+                                <button>
+                                    <a href="./item6/index.html" target="_blank">
+                                        <h6 class="card-info">INFORMAÇÕES</h6>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-container">
+        <div class="footer-content">
+            <h3>
+                Leonardo V Santana
+            </h3>
+            <p>Responsável Pelo Desenvolvimento Front-end</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/leonardo-v-santana-7b1a20170/" target="_blank"><img
+                        src="./img/linkdlinicon.svg" alt=""></a>
+                <a href="https://github.com/leonardovasconceloss" target="_blank"><img src="./img/githubicon.svg"
+                        alt=""></a>
+            </div>
+
+        </div>
+        <div class="date">
+            <h6>Checkpoint 3 | Desenvolvido em 2023</h6>
+        </div>
+    </footer>
+
+</body>
+
+</html>
