@@ -20,7 +20,17 @@ body {
   font-weight: lighter;
   justify-content: space-between;
   font-family: "Julius Sans One", sans-serif;
-  padding: 1.5rem 3rem 0rem;
+  padding: 1.5rem 1rem 0rem;
+}
+
+.menu img {
+  width: 2rem;
+  height: auto;
+  filter: invert(1);
+}
+
+.menu {
+  display: none; /* Mostra o botão do menu */
 }
 
 .navbar a {
@@ -34,6 +44,7 @@ body {
   gap: 0.4rem;
   justify-content: center;
   align-items: center;
+  width: 18%;
 }
 
 .logo-header h1 {
@@ -74,14 +85,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: none;
-  position: fixed;
-  z-index: 4;
-  left: 0;
-  top: 0;
+  z-index: 3;
   width: 100%;
   height: 100%;
-  overflow: auto;
   background-color: rgba(2, 2, 2, 0.8);
   color: #fff;
 }
@@ -90,15 +96,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   position: relative;
   background-image: url(../img/wallhaven-mdj5gm_1920x1200.png);
   background-position: center;
   background-color: rgba(6, 6, 6, 0.932);
   background-blend-mode: darken;
-  margin: 15% auto;
+  margin: 10% auto;
   padding: 6rem;
   border: 1px solid #888;
-  width: 30%;
+  width: 38%;
+  height: 55%;
+  overflow: hidden;
 }
 
 .form-content {
@@ -131,7 +140,6 @@ body {
   padding: 0.5rem;
   border-radius: 0.6rem;
   color: #ffffff;
-  transition: 0.4s;
 }
 
 .submit-btn a:hover {
@@ -416,4 +424,69 @@ h6 {
 
 .date {
   color: #fff;
+}
+
+/* Responsividade para 600px ou menor  */
+
+@media (max-width: 600px) {
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .logo-header {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menu img {
+    display: flex;
+    width: 2rem;
+    padding: 0.4rem 0rem 0rem 0rem;
+    opacity: 0.7;
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 100%; /* para posicionar a navbar logo abaixo do botão do menu */
+    right: 0; /*  para alinhar a navbar à direita */
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/wallhaven-mdj5gm_1920x1200.png);
+    background-position: center;
+    background-color: rgba(6, 6, 6, 0.932);
+    background-blend-mode: darken;
+    margin: 29% auto;
+    padding: 6rem;
+    border: 1px solid #888;
+    width: 85%;
+    text-align: center;
+  }
+
+  .content-explore h2 {
+    font-size: 2.5rem;
+  }
+
+  .btn-explore {
+    padding: 5px 20px;
+  }
+
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 70%;
+  }
 }

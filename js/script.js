@@ -35,3 +35,8 @@ window.onload = function () {
     }
   };
 };
+
+function onMenuButtonClick() {
+  const navbar = document.getElementById("navbar");
+  navbar.style.display = navbar.style.display == "block" ? "none" : "block";
+}
