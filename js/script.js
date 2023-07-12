@@ -1,3 +1,5 @@
+  /* Se ao modal de login */
+
 function goToMiddle() {
   const element = document.getElementById("middle");
   element.scrollIntoView({ behavior: "smooth" });
@@ -15,6 +17,8 @@ window.onload = function () {
     }
   };
 
+  /* Se ao modal de login */
+
   let modal = document.getElementById("loginModal");
 
   let btn = document.getElementsByClassName("login-btn")[0];
@@ -22,7 +26,7 @@ window.onload = function () {
   let span = document.getElementsByClassName("close-btn")[0];
 
   btn.onclick = function () {
-    modal.style.display = "block";
+    modal.style.display = "flex";
   };
 
   span.onclick = function () {
@@ -35,6 +39,9 @@ window.onload = function () {
     }
   };
 };
+
+
+/* Se refere ao botão de login */
 
 function onMenuButtonClick() {
   const navbar = document.getElementById("navbar");

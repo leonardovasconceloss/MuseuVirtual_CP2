@@ -97,17 +97,16 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  position: relative;
   background-image: url(../img/wallhaven-mdj5gm_1920x1200.png);
   background-position: center;
   background-color: rgba(6, 6, 6, 0.932);
   background-blend-mode: darken;
-  margin: 10% auto;
   padding: 6rem;
   border: 1px solid #888;
   width: 38%;
   height: 55%;
   overflow: hidden;
+  position: relative;
 }
 
 .form-content {
@@ -118,15 +117,23 @@ body {
 }
 
 .close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 36px;
   font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42px;
+  height: 42px;
 }
 
 .close-btn:hover,
 .close-btn:focus {
-  color: black;
+  color: #806547;;
   text-decoration: none;
   cursor: pointer;
 }
@@ -331,6 +338,9 @@ button {
 .card-text {
   color: #fff;
   padding-bottom: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 h5 {
@@ -467,10 +477,11 @@ h6 {
     background-position: center;
     background-color: rgba(6, 6, 6, 0.932);
     background-blend-mode: darken;
-    margin: 29% auto;
     padding: 6rem;
     border: 1px solid #888;
     width: 85%;
+    height: 50vh;
+    max-width: 480px;
     text-align: center;
   }
 
@@ -486,7 +497,56 @@ h6 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 90%;
+    height: 70%;
+  }
+}
+
+@media (min-width: 600px) {
+  .navbar {
+    display: block !important;
+  }
+}
+
+/* Media Query para 900 ou menor */
+
+@media (max-width: 900px) and (min-width: 600px) {
+  .modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/wallhaven-mdj5gm_1920x1200.png);
+    background-position: center;
+    background-color: rgba(6, 6, 6, 0.932);
+    background-blend-mode: darken;
+    padding: 6rem;
+    border: 1px solid #888;
+    width: 85%;
+    max-width: 480px;
+    text-align: center;
+  }
+
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+    height: 60%;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 900px) {
+  .gallery-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 2fr 2fr;
     width: 70%;
     height: 70%;
+    margin: 0;
+    padding: 3rem;
+    overflow: hidden;
+    gap: 2rem;
   }
 }
